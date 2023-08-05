@@ -5,8 +5,8 @@ containing values, create a dictionary using dictionary comprehension.
 keys = ["movie_name","actor","director","released_year"]
 values = ["Oppenheimer","Cilian Murphy","Christopher Nolan","2023"]
 
-result_dict = {keys[i]:values[i] for i in range(1,len(keys))}
-print(result_dict)
+result = {keys[i]:values[i] for i in range(1,len(keys))}
+print(result)
 
 
 """  Given a dictionary with students' names as keys and
