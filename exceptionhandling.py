@@ -37,14 +37,12 @@ print(divide(9, 3))
 display appropriate error messages. """
 
 def divide_numbers():
-    while True:
         try:
             num1 = int(input("Enter the first integer: "))
             num2 = int(input("Enter the second integer: "))
 
             result = num1 / num2
             print("Result of division: ", result)
-            break
 
         except ValueError:
             print("Error: Please enter valid integers.")
@@ -52,3 +50,17 @@ def divide_numbers():
             print("Error: Division By Zero")
 
 divide_numbers()
+
+""" Write a Python program that takes a user input and converts it to an integer. Handle
+the ValueError and display a custom error message when the input cannot be
+converted to an integer."""
+
+def convert_to_integer(user_input):
+    try:
+        num = int(user_input)
+        print(f"Successfully converted to an integer: {num}")
+    except ValueError:
+        print("Error: Input cannot be converted to an integer.")
+
+user_input = input("Enter a number: ")
+convert_to_integer(user_input)
