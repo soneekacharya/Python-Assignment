@@ -13,6 +13,6 @@ strings."""
 string1 = "hello"
 string2 = "world"
 
-common_characters = {char for char in string1 if char in string2}
+common_characters_set = {char for char in string1 if char in string2}
 
-print(common_characters)
+print(common_characters_set)
