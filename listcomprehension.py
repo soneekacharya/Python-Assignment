@@ -13,5 +13,5 @@ second list using list comprehension.
 
 list1 = [2, 4, 6, 8]
 list2 = [3, 1, 5, 2]
-product_list = [list1[i] * list2[i] for i in range(len(list1))]
-print(product_list)
+product_list_items = [list1[i] * list2[i] for i in range(len(list1))]
+print(product_list_items)
